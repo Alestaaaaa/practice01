@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    height: 100px;
+    color: #fff;
+    z-index: 1000;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: .5rem 1rem;
+    font-weight: lighter;
+}
+.nav-left h1 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;  /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    gap: 1rem; /* เพิ่มระยะห่างระหว่างเมนู */
+}
+
+.login-logo {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.login-logo img{
+    width: 25px;
+}
+.hero {
+    padding: 5rem;
+    background:url('https://static.wixstatic.com/media/1e3643_f1fadcd033fd4146bf3064e9c4e9e074~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_1905,h_1048,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/1e3643_f1fadcd033fd4146bf3064e9c4e9e074~mv2_d_5184_3456_s_4_2.jpg');
+    height: 1000px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    background: rgba(36, 35, 35, 0.5);
+    z-index: 2;
+}
+
+.hero-info {
+    position: relative;
+    padding-top: 15rem;
+    z-index: 2;
+}
+.hero-info h1 {
+    font-size: 8rem;
+}
+.hero-info h2 {
+    font-size: 1.5rem;
+    letter-spacing: 7px;
+    font-weight: lighter;
+}
+.hero-btn {
+    padding-top: 2rem;
+}
+.hero-btn button {
+    font-size: 15px;
+    border: none;
+    width: 12rem;
+    height: 2.7rem;
+    background-color: rgb(2, 212, 212);
+    font-weight: lighter;
+    color: rgb(61, 61, 61);
+}
+
+.about  {
+    background: url('https://static.wixstatic.com/media/1e3643_0643d259faaa4532a6868cae979ac775~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_1905,h_991,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1e3643_0643d259faaa4532a6868cae979ac775~mv2_d_5184_3456_s_4_2.jpg');
+    width: 100%px;
+    height: 817px;
+}
+.about-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("your-image.jpg") no-repeat center center/cover;
+    position: relative;
+}
+.about-box {
+    margin-bottom: 10rem;
+    background: white;
+    padding: 40px;
+    width: 50%;
+    max-width: 600px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-box h1 {
+    letter-spacing: 2px;
+    font-size: 3rem;
+    padding: 2.5rem 0;
+}
+
+.about-box p1{
+    text-align:center; 
+    line-height:1.5em; 
+    font-size:15px;
+}
+.about-box p2{
+    text-align:center; 
+    line-height:1.5em; 
+    font-size:15px;
+}
+.content {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+}
+.content-info h1 {
+    font-size: 3rem;
+    margin-bottom: 10px
+    
+}
+.content-info p {
+    margin-bottom: 5px;
+    padding-top: 1rem;
+    
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.membership {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+
+.membership h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.membership p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Membership Features */
+.membership-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    padding: 0 50px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.feature i {
+    font-size: 40px;
+    color: #3CC6C6;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url('https://static.wixstatic.com/media/1e3643_6b202171835a44438a999f773fe0e77f~mv2_d_7360_5068_s_4_2.jpg/v1/fill/w_1905,h_991,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1e3643_6b202171835a44438a999f773fe0e77f~mv2_d_7360_5068_s_4_2.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-overlay {
+    background: rgba(0, 0, 0, 0.5); /* เพิ่มเลเยอร์สีดำโปร่งแสง */
+    padding: 30px;
+    text-align: center;
+    color: white;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.contact-overlay h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.contact-overlay p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.subscribe {
+    margin-top: 20px;
+}
+
+.subscribe form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe input {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    background-color: #3CC6C6;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.subscribe button:hover {
+    background-color: #2ea2a2;
+}
+
+
+footer {
+    background-color: #292929; /* สีดำเข้ม */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-container p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 20px; /* ขนาดไอคอน */
+    height: 20px;
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
